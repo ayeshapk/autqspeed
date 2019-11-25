@@ -7,7 +7,7 @@ const Banner = () => (
     <div style={{position: 'relative',display: 'inline-block'}}>
       <img
         src={'https://res.cloudinary.com/www-weddingpenguin-co/image/upload/v1574653795/28872587_1840641622637502_3855369617967748203_n_y75rcx.jpg'}
-        style={Object.assign({},{objectFit: 'cover',marginBottom:'-10px',height:'540px',width:'1920px'})}
+        style={Object.assign({},{objectFit: 'cover',marginBottom:'-10px',height:'40vh',width:'300vh'})}
       />
 
         <Typography
