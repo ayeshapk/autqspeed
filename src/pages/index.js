@@ -3,9 +3,11 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Griditem from "../container/Griditem"
+import Banner from "../container/Banner"
 
 const IndexPage = () => (
   <div>
+    <Banner/>
   <Layout>
     <SEO title="Home" />
     <h1>Autqspeed</h1>
