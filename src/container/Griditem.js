@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Grid from "@material-ui/core/Grid"
 import Typography from "@material-ui/core/Typography"
 import {carData,commonText} from "../data/Data"
+import { Paper } from "@material-ui/core"
 
 const Griditem = () => (
   <div style={{padding:`20px`}}>
@@ -12,7 +13,7 @@ const Griditem = () => (
             <Grid
               item xs={12} sm={5} md={4}
               key={car.id}>
-              <div style={{margin:'10px'}}>
+              <Paper style={{margin:'10px'}}>
                 <div>
                   <Link to={car.link}>
                   <img
@@ -44,10 +45,10 @@ const Griditem = () => (
                   </Grid>
                   <hr style={{marginBottom:'5%',marginTop:'5%'}} />
                   <Typography>{car.description}</Typography>
-                 <Typography style={{textAlign:'right',paddingRight:'5%',paddingTop:'5%'}}> <Link style={{textDecoration: 'none'}} to={car.link}>{commonText.seeMore}</Link></Typography>
+                 <Typography style={{textAlign:'right',padding:'5%'}}> <Link style={{textDecoration: 'none'}} to={car.link}>{commonText.seeMore}</Link></Typography>
 
                 </div>
-              </div>
+              </Paper>
             </Grid>
           )
         )))}
