@@ -2,36 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Grid from "@material-ui/core/Grid"
 import Typography from "@material-ui/core/Typography"
-
-const carData = [
-  {
-    id:1,
-    name: "Mazda",
-    version: "3",
-    description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard',
-    image:'https://res.cloudinary.com/www-weddingpenguin-co/image/upload/v1574653795/28872587_1840641622637502_3855369617967748203_n_y75rcx.jpg',
-    date:'12 nov 2017',
-    link:'/carA/'
-  },
-  {
-    id:2,
-    name: "Nisson",
-    version: "Note",
-    description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard',
-    image:'https://res.cloudinary.com/www-weddingpenguin-co/image/upload/v1574654810/72660065_2777626128939042_6995830804047724544_o_zvklyf.jpg',
-    date:'9 dec 2018',
-    link:'/carB/'
-  },
-  {
-    id:3,
-    name: "Toyota",
-    version: "Aqua",
-    description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard',
-    image:'https://res.cloudinary.com/www-weddingpenguin-co/image/upload/v1574653796/45823334_2171481439553517_2539651863347724288_o_zsqpvl.jpg',
-    date:'6 sep 2019',
-    link:'/carC/',
-  },
-]
+import {carData,commonText} from "../data/Data"
 
 const Griditem = () => (
   <div style={{padding:`20px`}}>
@@ -73,7 +44,7 @@ const Griditem = () => (
                   </Grid>
                   <hr style={{marginBottom:'5%',marginTop:'5%'}} />
                   <Typography>{car.description}</Typography>
-                 <Typography style={{textAlign:'right',paddingRight:'5%',paddingTop:'5%'}}> <Link style={{textDecoration: 'none'}} to={car.link}>See this car</Link></Typography>
+                 <Typography style={{textAlign:'right',paddingRight:'5%',paddingTop:'5%'}}> <Link style={{textDecoration: 'none'}} to={car.link}>{commonText.seeMore}</Link></Typography>
 
                 </div>
               </div>

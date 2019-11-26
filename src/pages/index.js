@@ -4,14 +4,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Griditem from "../container/Griditem"
 import Banner from "../container/Banner"
+import {commonText} from "../data/Data"
+import { Typography } from "@material-ui/core"
 
 const IndexPage = () => (
   <div>
     <Banner/>
   <Layout>
     <SEO title="Home" />
-    <h1>Autqspeed</h1>
-    <p>Welcome to Autqspeed site.</p>
+    <h1>{commonText.siteName}</h1>
+    <Typography>{commonText.siteDescription}</Typography>
     <Griditem/>
     {/*<div style={{ maxWidth: `300px`,maxHeight: `300px`, marginBottom: `1.45rem` }}>
       <p>Mazda</p>

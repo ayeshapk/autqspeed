@@ -3,16 +3,19 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import {mainCarData} from "../data/Data"
+import { Typography } from "@material-ui/core"
 
-const SecondPage = () => (
+const CarB = () => (
   <Layout>
-    <SEO title="Car B" />
-    <h1>Nisson Note</h1>
+    <SEO title={mainCarData.carB.title} />
+    <h1>{mainCarData.carB.name}</h1>
     <div>
-      <img src={'https://res.cloudinary.com/www-weddingpenguin-co/image/upload/v1574654810/72660065_2777626128939042_6995830804047724544_o_zvklyf.jpg'}  alt={'carA'}/>
+      <img src={mainCarData.carB.image}  alt={mainCarData.carB.title}/>
     </div>
-    <Link to="/">Go back to the homepage</Link>
+    <Typography>{mainCarData.carB.description}</Typography>
+    <Link to={mainCarData.carB.link}>{mainCarData.carB.linkData}</Link>
   </Layout>
 )
 
-export default SecondPage
+export default CarB

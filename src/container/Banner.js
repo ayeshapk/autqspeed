@@ -1,12 +1,13 @@
 import React from "react"
 import Typography from "@material-ui/core/Typography"
-
+import {banner} from "../data/Data"
 
 const Banner = () => (
   <div>
     <div style={{position: 'relative',display: 'inline-block'}}>
       <img
-        src={'https://res.cloudinary.com/www-weddingpenguin-co/image/upload/v1574653795/28872587_1840641622637502_3855369617967748203_n_y75rcx.jpg'}
+        src={banner.image}
+        alt={banner.image}
         style={Object.assign({},{objectFit: 'cover',marginBottom:'-10px',height:'40vh',width:'300vh'})}
       />
 
@@ -20,7 +21,7 @@ const Banner = () => (
               width: '60%',top: '30%'},{color:'yellow'},
             {fontSize:'55px',textAlign:'left'})}
         >
-        Autqspeed
+        {banner.text}
       </Typography>
     </div>
   </div>
