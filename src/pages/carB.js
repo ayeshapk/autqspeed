@@ -23,7 +23,9 @@ const CarB = () => (
       <div>
         <img src={mainCarData.carB.image}  alt={mainCarData.carB.title}/>
       </div>
-      <Link to={mainCarData.carB.link}>{mainCarData.carB.linkData}</Link>
+      <Typography>{mainCarData.carC.text}</Typography>
+      <br />
+      <Link to={mainCarData.carC.link}>{mainCarData.carC.linkData}</Link>
     </Layout>
   </div>
 )

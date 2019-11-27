@@ -23,6 +23,8 @@ const CarC = () => (
       <div>
         <img src={mainCarData.carC.image}  alt={mainCarData.carC.title}/>
       </div>
+      <Typography>{mainCarData.carC.text}</Typography>
+      <br />
       <Link to={mainCarData.carC.link}>{mainCarData.carC.linkData}</Link>
     </Layout>
   </div>
