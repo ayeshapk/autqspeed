@@ -1,6 +1,6 @@
 import React from "react"
 import Typography from "@material-ui/core/Typography"
-import {smallBanner} from "../data/Data"
+import {smallBanner} from "../../data/Data"
 
 const Banner = () => (
   <div>
