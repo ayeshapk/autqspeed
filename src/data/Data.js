@@ -26,7 +26,8 @@ export const carData = [
     description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard',
     image:'https://res.cloudinary.com/www-weddingpenguin-co/image/upload/v1574653795/28872587_1840641622637502_3855369617967748203_n_y75rcx.jpg',
     date:'12 nov 2017',
-    link:'/carA/'
+    link:'/carA/',
+    price:'start at 24500 sgd'
   },
   {
     id:2,
@@ -35,7 +36,8 @@ export const carData = [
     description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard',
     image:'https://res.cloudinary.com/www-weddingpenguin-co/image/upload/v1574654810/72660065_2777626128939042_6995830804047724544_o_zvklyf.jpg',
     date:'9 dec 2018',
-    link:'/carB/'
+    link:'/carB/',
+    price:'start at 27500 sgd'
   },
   {
     id:3,
@@ -45,6 +47,7 @@ export const carData = [
     image:'https://res.cloudinary.com/www-weddingpenguin-co/image/upload/v1574653796/45823334_2171481439553517_2539651863347724288_o_zsqpvl.jpg',
     date:'6 sep 2019',
     link:'/carC/',
+    price:'start at 31500 sgd'
   },
 ]
 

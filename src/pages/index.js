@@ -4,17 +4,29 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Griditem from "../container/Griditem"
 import Banner from "../container/Banner"
-import {commonText} from "../data/Data"
 import { Typography } from "@material-ui/core"
-
+import Grid from "@material-ui/core/Grid"
+import {banner} from "../data/Data"
+import {carData,commonText} from "../data/Data"
 const IndexPage = () => (
   <div>
-    <Banner/>
+    <Banner banner={banner}/>
   <Layout>
     <SEO title="Home" />
-    <h1>{commonText.siteName}</h1>
-    <Typography>{commonText.siteDescription}</Typography>
-    <Griditem/>
+    <Grid container  spacing={0}
+                 style={{margin:'2%'}}>
+      <Grid item md={4}>
+        <h1 style={{textAlign:'right'}}>-----</h1>
+      </Grid>
+      <Grid item md={4}>
+      <h1 style={{textAlign:'center'}}>{commonText.siteName}</h1>
+      <Typography style={{textAlign:'center'}}>{commonText.siteDescription}</Typography>
+      </Grid>
+      <Grid item md={4}>
+        <h1 style={{textAlign:'left'}}>-----</h1>
+      </Grid>
+    </Grid>
+    <Griditem carData={carData} commonText={commonText}/>
     {/*<div style={{ maxWidth: `300px`,maxHeight: `300px`, marginBottom: `1.45rem` }}>
       <p>Mazda</p>
       <Link to="/carA/">See this car</Link>

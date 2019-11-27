@@ -1,8 +1,6 @@
 import React from "react"
-import Typography from "@material-ui/core/Typography"
-import {banner} from "../data/Data"
 
-const Banner = () => (
+const Banner = ({banner}) => (
   <div>
     <div style={{position: 'relative',display: 'inline-block'}}>
       <img
@@ -11,7 +9,7 @@ const Banner = () => (
         style={Object.assign({},{objectFit: 'cover',marginBottom:'-10px',height:'40vh',width:'300vh'})}
       />
 
-        <Typography
+      {/*<Typography
           style={Object.assign({},
             {position: 'absolute',
               zIndex: '9',
@@ -22,7 +20,7 @@ const Banner = () => (
             {fontSize:'55px',textAlign:'left'})}
         >
         {banner.text}
-      </Typography>
+      </Typography>*/}
     </div>
   </div>
 )

@@ -2,10 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import Grid from "@material-ui/core/Grid"
 import Typography from "@material-ui/core/Typography"
-import {carData,commonText} from "../data/Data"
 import { Paper } from "@material-ui/core"
 
-const Griditem = () => (
+const Griditem = ({carData,commonText}) => (
   <div style={{padding:`20px`}}>
       <Grid container spacing={0} >
         {(carData) && (carData.map (car => (
@@ -16,11 +15,19 @@ const Griditem = () => (
               <Paper style={{margin:'10px'}}>
                 <div>
                   <Link to={car.link}>
-                  <img
-                    alt={car.image}
-                    src={car.image}
-                    style={{marginBottom:'0px'}}
-                  />
+                    <div style={{position: 'relative',
+                      textAlign: 'center',
+                      color: 'white',backgroundColor:'#550080'}}>
+                      <img
+                        alt={car.image}
+                        src={car.image}
+                        style={{marginBottom:'0px', }}
+                      />
+                      <div style={{ borderRadius: '0px 20px 0px 0px',position: 'absolute',
+                        bottom: '0px',
+                        minWidth:'220px',
+                        left: '0px',backgroundColor:'#550080'}}>price:{car.price}</div>
+                    </div>
                   </Link>
                 </div>
                 <div style={{margin:'5%'}}>
