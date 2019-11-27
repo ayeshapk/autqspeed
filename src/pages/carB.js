@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {mainCarData} from "../data/Data"
+import { mainCarData, smallBanner } from "../data/Data"
 import { Typography } from "@material-ui/core"
-import SmallBannerB from "../container/SmallBannerB"
+import SmallBanner from "../container/SmallBanner"
 import TableDataB from "../container/TableDataB"
 import Paper from "@material-ui/core/Paper"
 
@@ -13,7 +13,7 @@ const CarB = () => (
   <div>
     <Layout>
       <SEO title={mainCarData.carB.title} />
-      <SmallBannerB />
+      <SmallBanner bannerItem={smallBanner.bannerB}/>
       <br />
       <h1 style={{textAlign:'center'}}>{mainCarData.carB.name}</h1>
       <Typography style={{textAlign:'center'}}>{mainCarData.carB.description}</Typography>

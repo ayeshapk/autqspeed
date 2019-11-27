@@ -5,15 +5,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {mainCarData} from "../data/Data"
 import { Typography } from "@material-ui/core"
-import SmallBannerC from "../container/SmallBannerC"
+import SmallBanner from "../container/SmallBanner"
 import TableDataC from "../container/TableDataC"
 import Paper from "@material-ui/core/Paper"
+import {smallBanner} from "../data/Data"
 
 const CarC = () => (
   <div>
     <Layout>
       <SEO title={mainCarData.carC.title} />
-      <SmallBannerC />
+      <SmallBanner bannerItem={smallBanner.bannerB}/>
       <br />
       <h1 style={{textAlign:'center'}}>{mainCarData.carC.name}</h1>
       <Typography style={{textAlign:'center'}}>{mainCarData.carC.description}</Typography>

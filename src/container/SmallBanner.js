@@ -2,12 +2,12 @@ import React from "react"
 import Typography from "@material-ui/core/Typography"
 import {smallBanner} from "../data/Data"
 
-const Banner = () => (
+const Banner = ({bannerItem}) => (
   <div>
     <div style={{position: 'relative',display: 'inline-block'}}>
       <img
-        src={smallBanner.bannerA.image}
-        alt={smallBanner.bannerA.image}
+        src={bannerItem.image}
+        alt={bannerItem.image}
         style={Object.assign({},{objectFit: 'cover',marginBottom:'-10px',height:'40vh',width:'300vh'})}
       />
 
@@ -21,7 +21,7 @@ const Banner = () => (
               width: '60%',top: '30%'},{color:'yellow'},
             {fontSize:'55px',textAlign:'left'})}
         >
-        {smallBanner.bannerA.text}
+        {bannerItem.text}
       </Typography>
     </div>
   </div>
