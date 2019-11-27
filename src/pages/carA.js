@@ -7,6 +7,7 @@ import {mainCarData} from "../data/Data"
 import { Typography } from "@material-ui/core"
 import SmallBannerA from "../container/SmallBannerA"
 import TableDataA from "../container/TableDataA"
+import Paper from "@material-ui/core/Paper"
 
 const CarA = () => (
   <div>
@@ -23,7 +24,9 @@ const CarA = () => (
       <div>
         <img src={mainCarData.carA.image}  alt={mainCarData.carA.title}/>
       </div>
+      <Paper style={{padding:"2%"}}>
       <Typography>{mainCarData.carC.text}</Typography>
+      </Paper>
       <br />
       <Link to={mainCarData.carC.link}>{mainCarData.carC.linkData}</Link>
     </Layout>
