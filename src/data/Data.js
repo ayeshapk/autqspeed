@@ -3,6 +3,21 @@ export const banner = {
       text:' Autqspeed',
 };
 
+export const smallBanner = {
+  bannerA:{
+    image:'https://res.cloudinary.com/www-weddingpenguin-co/image/upload/v1574653795/28872587_1840641622637502_3855369617967748203_n_y75rcx.jpg',
+    text:' Mazda',
+  },
+  bannerB:{
+    image:'https://res.cloudinary.com/www-weddingpenguin-co/image/upload/v1574654810/72660065_2777626128939042_6995830804047724544_o_zvklyf.jpg',
+    text:' Nisson',
+  },
+  bannerC:{
+    image:'https://res.cloudinary.com/www-weddingpenguin-co/image/upload/v1574653796/45823334_2171481439553517_2539651863347724288_o_zsqpvl.jpg',
+    text:' Toyota',
+  },
+}
+
 export const carData = [
   {
     id:1,
