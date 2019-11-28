@@ -49,6 +49,11 @@ const CarC = () => (
       <Typography>{mainCarData.carC.text}</Typography>
       </Paper>
       <br />
+      <h1 style={{textAlign:'center'}}>Feature</h1>
+      <div style={{textAlign:'center'}}>
+        <img src={mainCarData.carC.features}  alt={mainCarData.carC.features}/>
+      </div>
+      <br />
       <Link to={mainCarData.carC.link}>{mainCarData.carC.linkData}</Link>
     </Layout>
   </div>

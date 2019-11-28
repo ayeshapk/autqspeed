@@ -48,6 +48,11 @@ const CarA = () => (
       <Typography>{mainCarData.carC.text}</Typography>
       </Paper>
       <br />
+      <h1 style={{textAlign:'center'}}>Feature</h1>
+      <div style={{textAlign:'center'}}>
+        <img src={mainCarData.carA.features}  alt={mainCarData.carA.features}/>
+      </div>
+      <br />
       <Link to={mainCarData.carC.link}>{mainCarData.carC.linkData}</Link>
     </Layout>
   </div>
