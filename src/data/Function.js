@@ -1,28 +1,20 @@
-export function createTableData(MODEL, ENGINE_POWER, RATED_PAYLOAD, HEAPED_CAPACITY, GUARANTEE) {
-  return { MODEL, ENGINE_POWER, RATED_PAYLOAD, HEAPED_CAPACITY, GUARANTEE };
+export function createTableData(MODEL, ENGINE, HP, Cooling, Fuel_Type,Cylinders,Engine_Disp,Weight) {
+  return { MODEL, ENGINE: ENGINE, HP: HP, Cooling: Cooling, Fuel_Type: Fuel_Type ,Cylinders,Engine_Disp,Weight};
 }
 
 export const carTable = {
   rowA:[
-    createTableData('Mazda 3 2017', 159, 6.0, 24, 4.0),
-    createTableData('Mazda 3 2018', 237, 9.0, 37, 4.3),
-    createTableData('Mazda 3 2019', 262, 16.0, 24, 6.0),
-    createTableData('Mazda 2 2018', 305, 3.7, 67, 4.3),
-    createTableData('Mazda 2 2019', 356, 16.0, 49, 3.9),
+    createTableData('2100C', 'Kawasaki', '18 1⁄2 HP', 'Air', 'Gas','2-cyl','603cc','970 lbs'),
   ],
   rowB:[
-    createTableData('Nisson Note 2017', 159, 6.0, 24, 4.0),
-    createTableData('Nisson Note 2018', 237, 9.0, 37, 4.3),
-    createTableData('Nisson Note 2019', 262, 16.0, 24, 6.0),
-    createTableData('Nisson Note 2 2018', 305, 3.7, 67, 4.3),
-    createTableData('Nisson Note 2 2019', 356, 16.0, 49, 3.9),
+    createTableData('3400L', 'B&S Vanguard', '20HP', 'Air', 'Gas','2-cyl','627cc','1000 lbs'),
+    createTableData('3400Y', 'Kubota', '22HP', 'Liquid', 'Diesel','3-cyl','898cc','1220 lbs'),
   ],
   rowC:[
-    createTableData('Toyota Aqua 2017', 159, 6.0, 24, 4.0),
-    createTableData('Toyota Aqua 2018', 237, 9.0, 37, 4.3),
-    createTableData('Toyota Aqua 2019', 262, 16.0, 24, 6.0),
-    createTableData('Toyota Aqua + 2018', 305, 3.7, 67, 4.3),
-    createTableData('Toyota Aqua + 2019', 356, 16.0, 49, 3.9),
+    createTableData('4500K', 'B&S Vanguard', '31HP', 'Air', 'Gas','2-cyl','896cc','1340 lbs'),
+    createTableData('4500P', 'Kawasaki', '31HP', 'Liquid', 'Gas','2-cyl','824cc','1575 lbs'),
+    createTableData('4500Y', 'Kubota', '25HP', 'Liquid', 'Diesel','3-cyl','898cc','1655 lbs'),
+    createTableData('4500Z', 'Kubota', '32.5HP', 'Liquid', 'Gas (Propane Ready)','3-cyl','962cc','1655 lbs'),
   ]
 };
 

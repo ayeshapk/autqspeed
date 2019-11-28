@@ -15,9 +15,9 @@ const Banner = ({bannerItem}) => (
             {position: 'absolute',
               zIndex: '9',
               margin: '0 auto',
-              left: 0,
-              right: 0,textAlign: 'center',
-              width: '60%',top: '30%'},{color:'yellow'},
+              left: '1%',
+              textAlign: 'center',
+              bottom: '1%'},{color:'#333333',backgroundColor:'#ffffff6b'},
             {fontSize:'55px',textAlign:'left'})}
         >
         {bannerItem.text}

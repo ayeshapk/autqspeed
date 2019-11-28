@@ -34,10 +34,13 @@ export default function TableData({rows}) {
           <TableHead>
             <TableRow>
               <TableCell style={{paddingLeft:'10px'}}>Model</TableCell>
-              <TableCell align="right">ENGINE_POWER&nbsp;(kW)</TableCell>
-              <TableCell align="right">RATED_PAYLOAD&nbsp;(kg)</TableCell>
-              <TableCell align="right">HEAPED_CAPACITY&nbsp;(m³)</TableCell>
-              <TableCell align="right">GUARANTEE&nbsp;(years)</TableCell>
+              <TableCell align="right">Engine</TableCell>
+              <TableCell align="right">HP</TableCell>
+              <TableCell align="right">Cooling</TableCell>
+              <TableCell align="right">Fuel Type</TableCell>
+              <TableCell align="right">Cylinders #</TableCell>
+              <TableCell align="right">Engine Disp.</TableCell>
+              <TableCell align="right">Weight</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -46,10 +49,13 @@ export default function TableData({rows}) {
                 <TableCell style={{paddingLeft:'10px'}} component="th" scope="row">
                   {row.MODEL}
                 </TableCell>
-                <TableCell align="right">{row.ENGINE_POWER}</TableCell>
-                <TableCell align="right">{row.RATED_PAYLOAD}</TableCell>
-                <TableCell align="right">{row.HEAPED_CAPACITY}</TableCell>
-                <TableCell align="right">{row.GUARANTEE}</TableCell>
+                <TableCell align="right">{row.ENGINE}</TableCell>
+                <TableCell align="right">{row.HP}</TableCell>
+                <TableCell align="right">{row.Cooling}</TableCell>
+                <TableCell align="right">{row.Fuel_Type}</TableCell>
+                <TableCell align="right">{row.Cylinders}</TableCell>
+                <TableCell align="right">{row.Engine_Disp}</TableCell>
+                <TableCell align="right">{row.Weight}</TableCell>
               </TableRow>
             ))}
           </TableBody>

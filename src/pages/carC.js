@@ -15,7 +15,7 @@ const CarC = () => (
   <div>
     <Layout>
       <SEO title={mainCarData.carC.title} />
-      <SmallBanner bannerItem={smallBanner.bannerB}/>
+      <SmallBanner bannerItem={smallBanner.bannerC}/>
       <br />
       <h1 style={{textAlign:'center'}}>{mainCarData.carC.name}</h1>
       <Typography style={{textAlign:'center'}}>{mainCarData.carC.description}</Typography>

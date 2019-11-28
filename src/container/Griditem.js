@@ -31,7 +31,7 @@ const Griditem = ({carData,commonText}) => (
                   </Link>
                 </div>
                 <div style={{margin:'5%'}}>
-                  <Typography style={{color:'purple',fontSize:'32px'}}><Link style={{textDecoration: 'none'}} to={car.link}>{car.name} {car.version}</Link></Typography>
+                  <Typography style={{color:'purple',fontSize:'32px'}}><Link style={{textDecoration: 'none'}} to={car.link}>{car.name} </Link></Typography>
                 </div>
                 <div style={{margin:'5%'}}>
                   <Grid container spacing={0} >
@@ -43,7 +43,7 @@ const Griditem = ({carData,commonText}) => (
                     </Grid>
                   </Grid>
                   <Grid container spacing={0} >
-                    <Grid item xs={12} sm={6} md={6}><Typography>Version:</Typography></Grid>
+                    <Grid item xs={12} sm={6} md={6}><Typography>Model:</Typography></Grid>
                     <Grid item xs={12} sm={6} md={6}><Typography>{car.version}</Typography></Grid>
                   </Grid>
                   <Grid container spacing={0} >
