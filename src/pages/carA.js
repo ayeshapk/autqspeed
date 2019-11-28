@@ -6,9 +6,10 @@ import SEO from "../components/seo"
 import {mainCarData} from "../data/Data"
 import { Typography } from "@material-ui/core"
 import SmallBanner from "../container/SmallBanner"
-import TableDataA from "../container/TableDataA"
+import TableData from "../container/TableData"
 import Paper from "@material-ui/core/Paper"
 import {smallBanner} from "../data/Data"
+import {carTable} from "../data/Function"
 
 const CarA = () => (
   <div>
@@ -18,7 +19,7 @@ const CarA = () => (
       <br />
       <h1 style={{textAlign:'center'}}>{mainCarData.carA.name}</h1>
       <Typography style={{textAlign:'center'}}>{mainCarData.carA.description}</Typography>
-      <TableDataA />
+      <TableData rows={carTable.rowA}/>
       <br />
       <Typography>Image</Typography>
       <br />

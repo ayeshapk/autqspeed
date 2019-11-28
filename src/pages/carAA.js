@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import {mainCarData} from "../data/Data"
 import { Typography } from "@material-ui/core"
 import SmallBannerA from "../container/SmallBanner"
-import TableDataA from "../container/TableDataA"
+import TableDataA from "../container/nouse/TableDataA"
 
 const CarAA= () => (
   <div>
