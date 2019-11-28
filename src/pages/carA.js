@@ -10,6 +10,7 @@ import TableData from "../container/TableData"
 import Paper from "@material-ui/core/Paper"
 import {smallBanner} from "../data/Data"
 import {carTable} from "../data/Function"
+import Grid from "@material-ui/core/Grid/Grid"
 
 const CarA = () => (
   <div>
@@ -17,13 +18,30 @@ const CarA = () => (
       <SEO title={mainCarData.carA.title} />
       <SmallBanner bannerItem={smallBanner.bannerA}/>
       <br />
-      <h1 style={{textAlign:'center'}}>{mainCarData.carA.name}</h1>
-      <Typography style={{textAlign:'center'}}>{mainCarData.carA.description}</Typography>
+      <h1 style={{textAlign:'center'}}>PRODUCT OVERVIEW</h1>
       <TableData rows={carTable.rowA}/>
       <br />
+      <Grid  container spacing={3}>
+        <Grid item xs={12} sm={6} md={6}>
+          <Paper>
+          <h1 style={{textAlign:'center'}}>MODELS</h1>
+            {mainCarData.carA.models&&<div style={{padding:'10px'}}>
+              {mainCarData.carA.models&&mainCarData.carA.models.map(models => (<Typography key={models.model}>►{models.model}</Typography>))}
+            </div>}
+          </Paper>
+        </Grid>
+        <Grid item xs={12} sm={6} md={6}>
+          <Paper>
+          <h1 style={{textAlign:'center'}}>ACCESSORY OPTIONS</h1>
+            {mainCarData.carA.accessory_Options&&<div style={{padding:'10px'}}>
+              {mainCarData.carA.accessory_Options&&mainCarData.carA.accessory_Options.map(accessory_Options => (<Typography key={accessory_Options.option}>►{accessory_Options.option}</Typography>))}
+            </div>}
+          </Paper>
+        </Grid>
+      </Grid>
       <Typography>Image</Typography>
       <br />
-      <div>
+      <div style={{textAlign:'center'}}>
         <img src={mainCarData.carA.image}  alt={mainCarData.carA.title}/>
       </div>
       <Paper style={{padding:"2%"}}>

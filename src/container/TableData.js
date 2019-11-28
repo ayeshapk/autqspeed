@@ -44,7 +44,7 @@ export default function TableData({rows}) {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map(row => (
+            {rows && rows.map(row => (
               <TableRow key={row.MODEL}>
                 <TableCell style={{paddingLeft:'10px'}} component="th" scope="row">
                   {row.MODEL}

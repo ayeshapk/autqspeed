@@ -51,7 +51,13 @@ const Griditem = ({carData,commonText}) => (
                     <Grid item xs={12} sm={6} md={6}><Typography>{car.date}</Typography></Grid>
                   </Grid>
                   <hr style={{marginBottom:'5%',marginTop:'5%'}} />
-                  <Typography>{car.description}</Typography>
+
+                  {car.highlight&&<div>
+                    <Typography>HighLight</Typography>
+                    <br />
+                    {car.highlight&&car.highlight.map(tractor => (<Typography key={tractor.text}>►{tractor.text}</Typography>))}
+                  </div>}
+
                  <Typography style={{textAlign:'right',padding:'5%'}}> <Link style={{textDecoration: 'none'}} to={car.link}>{commonText.seeMore}</Link></Typography>
 
                 </div>

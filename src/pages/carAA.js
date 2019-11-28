@@ -8,7 +8,7 @@ import { Typography } from "@material-ui/core"
 import SmallBannerA from "../container/SmallBanner"
 import TableDataA from "../container/nouse/TableDataA"
 
-const CarAA= () => (
+const carAA= () => (
   <div>
   <Layout>
     <SEO title={mainCarData.carA.title} />
@@ -28,4 +28,4 @@ const CarAA= () => (
   </div>
 )
 
-export default CarAA
+export default carAA
