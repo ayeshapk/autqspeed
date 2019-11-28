@@ -25,7 +25,7 @@ export const carData = [
   {
     id:1,
     name: "VENTRAC SSV",
-    version: "2100C SSV KAWASAKI FS600V",
+    version: [{ver:"2100C SSV KAWASAKI FS600V"}],
     highlight:[{text:'18.5 HP Commercial Kawasaki Engine'},
       {text:'Dedicated snow attachments and accessories'},
       {text:'All Wheel Drive'},
@@ -38,7 +38,7 @@ export const carData = [
   {
     id:2,
     name: "3400 TRACTOR",
-    version: "VANGUARD M38,KUBOTA D902",
+    version: [{ver:"VANGUARD M38"},{ver:"KUBOTA D902"}],
     highlight:[
       {text:"Excellent outfront visibility"},
       {text:"Compact Size and tight turning radius"},
@@ -55,7 +55,7 @@ export const carData = [
   {
     id:3,
     name: "4500 TRACTOR",
-    version: "VANGUARD M54, KAWASAKI FD851D,KUBOTA D902,KUBOTA WG972-GL",
+    version: [{ver:"VANGUARD M54"},{ver:"KAWASAKI FD851D"},{ver:"KUBOTA D902"},{ver:"KUBOTA WG972-GL"}],
     highlight:[{text:"25-32.5 HP Engines"},
       {text:"Over 30 Attachments"},
       {text:"All Wheel Drive"},

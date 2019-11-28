@@ -35,20 +35,23 @@ const Griditem = ({carData,commonText}) => (
                 </div>
                 <div style={{margin:'5%'}}>
                   <Grid container spacing={0} >
-                    <Grid item xs={12} sm={6} md={6}>
+                    <Grid item xs={12} sm={4} md={4}>
                       <Typography>Name:</Typography>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={6}>
+                    <Grid item xs={12} sm={8} md={8}>
                       <Typography>{car.name}</Typography>
                     </Grid>
                   </Grid>
                   <Grid container spacing={0} >
-                    <Grid item xs={12} sm={6} md={6}><Typography>Model:</Typography></Grid>
-                    <Grid item xs={12} sm={6} md={6}><Typography>{car.version}</Typography></Grid>
+                    <Grid item xs={12} sm={4} md={4}><Typography>Model:</Typography></Grid>
+                    <Grid item xs={12} sm={8} md={8}>
+                    {car.version&&car.version.map(version => (
+                      (<div><Typography key={version.ver}> ► {version.ver}</Typography></div>)))}
+                    </Grid>
                   </Grid>
                   <Grid container spacing={0} >
-                    <Grid item xs={12} sm={6} md={6}><Typography>Date:</Typography></Grid>
-                    <Grid item xs={12} sm={6} md={6}><Typography>{car.date}</Typography></Grid>
+                    <Grid item xs={12} sm={4} md={4}><Typography>Date:</Typography></Grid>
+                    <Grid item xs={12} sm={8} md={8}><Typography>{car.date}</Typography></Grid>
                   </Grid>
                   <hr style={{marginBottom:'5%',marginTop:'5%'}} />
 
