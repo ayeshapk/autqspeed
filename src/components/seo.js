@@ -25,7 +25,7 @@ function SEO({ description, lang, meta, title }) {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.highlight
+  const metaDescription = description || site.siteMetadata.description
 
   return (
     <Helmet
@@ -75,11 +75,11 @@ function SEO({ description, lang, meta, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  highlight: ``,
+  description: ``,
 }
 
 SEO.propTypes = {
-  highlight: PropTypes.string,
+  description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
