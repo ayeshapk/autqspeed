@@ -9,9 +9,7 @@ const Griditem = ({carData,commonText}) => (
       <Grid container spacing={0} >
         {(carData) && (carData.map (car => (
           (
-            <Grid
-              item xs={12} sm={5} md={4}
-              key={car.id}>
+            <Grid item xs={12} sm={5} md={4} key={car.id}>
               <Paper style={{margin:'10px'}}>
                 <div>
                   <Link to={car.link}>
@@ -45,8 +43,11 @@ const Griditem = ({carData,commonText}) => (
                   <Grid container spacing={0} >
                     <Grid item xs={12} sm={4} md={4}><Typography>Model:</Typography></Grid>
                     <Grid item xs={12} sm={8} md={8}>
-                    {car.version&&car.version.map(version => (
-                      (<div><Typography key={version.ver}> ► {version.ver}</Typography></div>)))}
+                      {car.version&&car.version.map(v => (
+                        (<div key={v.id}>
+                          <Typography> ► {v.ver}</Typography>
+                        </div>)))
+                      }
                     </Grid>
                   </Grid>
                   <Grid container spacing={0} >
@@ -58,11 +59,12 @@ const Griditem = ({carData,commonText}) => (
                   {car.highlight&&<div>
                     <Typography>HighLight</Typography>
                     <br />
-                    {car.highlight&&car.highlight.map(tractor => (<Typography key={tractor.text}>►{tractor.text}</Typography>))}
+                    {car.highlight&&car.highlight.map(h => (
+                      <Typography key={h.id}>►{h.text}</Typography>
+                    ))}
                   </div>}
 
-                 <Typography style={{textAlign:'right',padding:'5%'}}> <Link style={{textDecoration: 'none'}} to={car.link}>{commonText.seeMore}</Link></Typography>
-
+                  <Typography style={{textAlign:'right',padding:'5%'}}> <Link style={{textDecoration: 'none'}} to={car.link}>{commonText.seeMore}</Link></Typography>
                 </div>
               </Paper>
             </Grid>

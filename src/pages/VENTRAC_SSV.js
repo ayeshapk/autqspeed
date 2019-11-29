@@ -12,7 +12,7 @@ import {smallBanner} from "../data/Data"
 import {carTable} from "../data/Function"
 import Grid from "@material-ui/core/Grid/Grid"
 
-const CarA = () => (
+const VENTRAC_SSV = () => (
   <div>
     <Layout>
       <SEO title={mainCarData.carA.title} />
@@ -26,7 +26,7 @@ const CarA = () => (
           <Paper>
           <h1 style={{textAlign:'center'}}>MODELS</h1>
             {mainCarData.carA.models&&<div style={{padding:'10px'}}>
-              {mainCarData.carA.models&&mainCarData.carA.models.map(models => (<Typography key={models.model}>►{models.model}</Typography>))}
+              {mainCarData.carA.models&&mainCarData.carA.models.map(models => (<Typography key={models.id}>►{models.model}</Typography>))}
             </div>}
           </Paper>
         </Grid>
@@ -34,7 +34,7 @@ const CarA = () => (
           <Paper>
           <h1 style={{textAlign:'center'}}>ACCESSORY OPTIONS</h1>
             {mainCarData.carA.accessory_Options&&<div style={{padding:'10px'}}>
-              {mainCarData.carA.accessory_Options&&mainCarData.carA.accessory_Options.map(accessory_Options => (<Typography key={accessory_Options.option}>►{accessory_Options.option}</Typography>))}
+              {mainCarData.carA.accessory_Options&&mainCarData.carA.accessory_Options.map(accessory_Options => (<Typography key={accessory_Options.id}>►{accessory_Options.option}</Typography>))}
             </div>}
           </Paper>
         </Grid>
@@ -58,4 +58,4 @@ const CarA = () => (
   </div>
 )
 
-export default CarA
+export default VENTRAC_SSV
